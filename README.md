@@ -50,3 +50,4 @@ Since the classical ML classifiers used here are much lighter than the GraphCNNs
 3. Run ```python classical_models_tune_and_eval.py``` to obtain results of classical ML model performance.
 
 ## Inference
+To run inference on the combined circumpolar building footprint (where HABITAT fills gaps in OSM), change ```"data_path"``` in ```config.py (line 13)``` to "circumpolar_OSM_HABITAT_building_node_features.csv".
