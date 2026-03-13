@@ -48,3 +48,5 @@ Since the classical ML classifiers used here are much lighter than the GraphCNNs
 1. Similar to the previous experiment, adjust the I/O paths in ```classical_models_tune_and_eval.py (lines 40-45)```.
 2. From your HPC system, download the .npz file that contains the indices used to split the data into train/val/test for the GraphCNN model selection experiment. Set ```"split_path"``` in line 44 to this file.
 3. Run ```python classical_models_tune_and_eval.py``` to obtain results of classical ML model performance.
+
+## Inference
