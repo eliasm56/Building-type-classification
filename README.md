@@ -50,4 +50,11 @@ Since the classical ML classifiers used here are much lighter than the GraphCNNs
 3. Run ```python classical_models_tune_and_eval.py``` to obtain results of classical ML model performance.
 
 ## Inference
-To run inference on the combined circumpolar building footprint (where HABITAT fills gaps in OSM), change ```"data_path"``` in ```config.py (line 13)``` to "circumpolar_OSM_HABITAT_building_node_features.csv".
+To run inference on the combined circumpolar building footprint (where HABITAT fills gaps in OSM):
+1. Change ```"data_path"``` in ```config.py (line 13)``` to "circumpolar_OSM_HABITAT_building_node_features.csv".
+2. Run ```python run_inference.py```
+
+## Accuracy assessment
+To assess the accuracy of predicted building types as a result of model inference:
+1. Download all files from ```Building-type-classification/data```, which contain the ```bldg_type_accuracy_samples``` shapefile holding building type labels for sampled urban and rural communities across Arctic Russia, Canada, and Alaska.
+2. Run ```python bldg_type_accuracy_assessment.py```.
